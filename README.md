@@ -114,5 +114,5 @@ Python · pandas · matplotlib
 
 ## Author
 
-**Gourav Jalaneela** — MSc student, Big Data & Artificial Intelligence,
-SRH Hochschule Berlin.
+**Shushrutha Reddy** — MSc student,Data Analytics,
+Berlin School of Bussiness Innovation.
