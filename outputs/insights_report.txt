@@ -1,0 +1,19 @@
+DEAN & DAVID — SAMPLE P&L ANALYSIS: KEY INSIGHTS
+=======================================================
+- Total revenue (60-day sample period): EUR 71,861.10
+- Total operating profit: EUR 3,893.37
+- Average gross margin: 68.3%
+- Average operating margin: 2.7%
+- Average labor cost as % of revenue: 46.7%
+
+- Top profit contributor: Chicken Teriyaki Bowl (EUR 10,892.65 gross profit, 66.2% margin)
+- Lowest margin item: Salmon Poke Bowl (62.2% margin) — consider a price review or cost renegotiation
+
+- Highest average revenue day: Friday (EUR 1,300.14)
+- Lowest average revenue day: Saturday (EUR 728.06) — review staffing levels against this demand
+
+- Week with highest labor-cost ratio: week of 2026-05-11 (48.8% of revenue)
+
+NOTE: This analysis runs on synthetic/sample data generated for
+portfolio purposes. Replace the CSVs in /data with real exports
+(same column structure) to produce a live analysis.
