@@ -1,4 +1,4 @@
-# Dean & David — Restaurant Profit & Loss Analysis
+# Dean & David  Restaurant Profit & Loss Analysis
 
 A Python data analytics project that builds a full Profit & Loss (P&L)
 pipeline for a quick-service restaurant, inspired by my time working
