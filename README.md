@@ -15,7 +15,7 @@ with zero changes to the code.
 
 ## Why this project
 
-As a Big Data & AI master's student working front-of-house at a
+As a Data Analytics  master's student working front-of-house at a
 restaurant, I wanted a hands-on project that goes beyond a generic
 Kaggle dataset  one that mirrors a real operational analytics
 problem: turning raw sales and labor data into a management-ready
