@@ -1,4 +1,4 @@
-# Dean & David — Restaurant Profit & Loss Analysis
+# Dean & David  Restaurant Profit & Loss Analysis
 
 A Python data analytics project that builds a full Profit & Loss (P&L)
 pipeline for a quick-service restaurant, inspired by my time working
@@ -17,7 +17,7 @@ with zero changes to the code.
 
 As a Big Data & AI master's student working front-of-house at a
 restaurant, I wanted a hands-on project that goes beyond a generic
-Kaggle dataset — one that mirrors a real operational analytics
+Kaggle dataset  one that mirrors a real operational analytics
 problem: turning raw sales and labor data into a management-ready
 P&L with actionable recommendations.
 
@@ -72,19 +72,7 @@ Full breakdown in [`outputs/insights_report.txt`](outputs/insights_report.txt).
 More charts (item margin ranking, profit contribution by item, labor
 cost trend, weekday demand pattern) are in `outputs/charts/`.
 
-## How to run
 
-```bash
-git clone <this-repo-url>
-cd dean-david-pl-analysis
-pip install -r requirements.txt
-
-# (Optional) regenerate the synthetic dataset
-python src/generate_sample_data.py
-
-# Run the full analysis: computes P&L, saves summary CSVs, generates charts
-python src/run_analysis.py
-```
 
 Outputs (summary CSVs, charts, insights report) are written to `/outputs`.
 
@@ -134,5 +122,5 @@ Python · pandas · matplotlib
 
 ## Author
 
-**Gourav Jalaneela** — MSc student, Big Data & Artificial Intelligence,
-SRH Hochschule Berlin.
+**Shushrutha Reddy** — MSc student, Data Analytics,
+Berlin School of Bussinees and Innovation.
