@@ -1,12 +1,12 @@
-# Dean & David — Restaurant Profit & Loss Analysis
+# Dean & David - Restaurant Profit & Loss Analysis
 
 A Python data analytics project that builds a full Profit & Loss (P&L)
-pipeline for a quick-service restaurant, inspired by my time working
+pipeline for a quick service restaurant  inspired by my time working
 at a **Dean & David** outlet in Berlin. Real financial data from the
 business isn't shareable, so this project uses a **synthetic but
-realistic 60-day sample dataset** (menu, item-level sales, labor
+realistic 60-day sample dataset** (menu, item level sales, labor
 hours, overheads) that mirrors the structure of an actual POS/labor
-export — meaning the exact same pipeline can be pointed at real data
+export  meaning the exact same pipeline can be pointed at real data
 with zero changes to the code.
 
 > **Disclaimer:** All data in `/data` is synthetically generated
@@ -16,8 +16,8 @@ with zero changes to the code.
 ## Why this project
 
 As a Big Data & AI master's student working front-of-house at a
-restaurant, I wanted a hands-on project that goes beyond a generic
-Kaggle dataset — one that mirrors a real operational analytics
+restaurant, I wanted a hands on project that goes beyond a generic
+Kaggle dataset  one that mirrors a real operational analytics
 problem: turning raw sales and labor data into a management-ready
 P&L with actionable recommendations.
 
@@ -66,7 +66,7 @@ dean-david-pl-analysis/
 
 Full breakdown in [`outputs/insights_report.txt`](outputs/insights_report.txt).
 
-### Example chart
+## Example chart
 
 ![Weekly Revenue vs Operating Profit](outputs/charts/weekly_revenue_vs_profit.png)
 
@@ -75,17 +75,7 @@ cost trend, weekday demand pattern) are in `outputs/charts/`.
 
 ## How to run
 
-```bash
-git clone <this-repo-url>
-cd dean-david-pl-analysis
-pip install -r requirements.txt
 
-# (Optional) regenerate the synthetic dataset
-python src/generate_sample_data.py
-
-# Run the full analysis: computes P&L, saves summary CSVs, generates charts
-python src/run_analysis.py
-```
 
 Outputs (summary CSVs, charts, insights report) are written to `/outputs`.
 
@@ -120,15 +110,15 @@ python src/run_analysis.py
 ```
 
 This writes `outputs/ai_generated_insights.md` alongside the charts and
-CSVs, and it's also what the dashboard's "Manager's note" displays.
+CSVs and it's also what the dashboard's "Manager's note" displays.
 Only summary statistics (revenue, margins, top/bottom items, etc.) are
-sent to the API — never raw row-level sales data — keeping the prompt
-small and, if this is later pointed at real restaurant data, limiting
-what's exposed to a third-party API.
+sent to the API — never raw row-level sales data  keeping the prompt
+small and, if this is later pointed at real restaurant data limiting
+what's exposed to a third party API.
 
 **No API key?** `run_analysis.py` automatically falls back to a static,
-template-based narrative so the project still runs end-to-end without
-requiring paid API access — the LLM step is an enhancement layer, not
+template based narrative so the project still runs end-to-end without
+requiring paid API access  the LLM step is an enhancement layer not
 a hard dependency.
 
 ## Using this with real data
@@ -159,5 +149,5 @@ Python · pandas · matplotlib
 
 ## Author
 
-**Gourav Jalaneela** — MSc student, Big Data & Artificial Intelligence,
-SRH Hochschule Berlin.
+**Shushrutha Reddy** — MSc student, Data Analytics,
+ Berlin School of Bussiness Innovation.
