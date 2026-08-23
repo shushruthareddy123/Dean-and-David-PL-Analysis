@@ -5,7 +5,7 @@ pipeline for a quick service restaurant  inspired by my time working
 at a **Dean & David** outlet in Berlin. Real financial data from the
 business isn't shareable, so this project uses a **synthetic but
 realistic 60-day sample dataset** (menu, item level sales, labor
-hours, overheads) that mirrors the structure of an actual POS/labor
+hours overheads) that mirrors the structure of an actual POS/labor
 export  meaning the exact same pipeline can be pointed at real data
 with zero changes to the code.
 
@@ -15,10 +15,10 @@ with zero changes to the code.
 
 ## Why this project
 
-As a Big Data & AI master's student working front-of-house at a
+As a Big Data & AI master's student working front of house at a
 restaurant, I wanted a hands on project that goes beyond a generic
 Kaggle dataset  one that mirrors a real operational analytics
-problem: turning raw sales and labor data into a management-ready
+problem: turning raw sales and labor data into a management ready
 P&L with actionable recommendations.
 
 ## Project structure
@@ -49,11 +49,11 @@ dean-david-pl-analysis/
 
 ## What the analysis covers
 
-- **Revenue, COGS, Gross Profit & Gross Margin** — daily and weekly
-- **Labor cost** as a % of revenue (with a healthy-range benchmark line)
+- **Revenue, COGS, Gross Profit & Gross Margin**  daily and weekly
+- **Labor cost** as a % of revenue (with a healthy range benchmark line)
 - **Operating Profit & Operating Margin** after allocating fixed overheads
-- **Item-level profitability** — which menu items drive the most profit vs. which have thin margins
-- **Demand patterns by day of week** — to sanity-check staffing against actual footfall
+- **Item-level profitability** - which menu items drive the most profit vs. which have thin margins
+- **Demand patterns by day of week** — to sanity check staffing against actual footfall
 
 ## Sample results (from the synthetic dataset)
 
@@ -61,7 +61,7 @@ dean-david-pl-analysis/
 - Average gross margin: **68.3%**
 - Average operating margin: **2.7%**
 - Average labor cost as % of revenue: **46.7%** — above the ~30% industry guideline, flagged as an area to investigate
-- Highest-revenue day: **Friday** · Lowest: **Saturday**
+- Highest revenue day: **Friday** · Lowest: **Saturday**
 - Top profit contributor: **Chicken Teriyaki Bowl**
 
 Full breakdown in [`outputs/insights_report.txt`](outputs/insights_report.txt).
@@ -102,7 +102,7 @@ This opens in your browser at `http://localhost:8501`.
 Every time you run the main pipeline, it also generates a plain-English
 executive summary using Claude (via the Anthropic API) — built from the
 same computed metrics, so the "so what" is written fresh each run
-instead of being a hand-written static report.
+instead of being a hand written static report.
 
 ```bash
 export ANTHROPIC_API_KEY="your-key-here"   # optional — see below
@@ -113,10 +113,10 @@ This writes `outputs/ai_generated_insights.md` alongside the charts and
 CSVs and it's also what the dashboard's "Manager's note" displays.
 Only summary statistics (revenue, margins, top/bottom items, etc.) are
 sent to the API — never raw row-level sales data  keeping the prompt
-small and, if this is later pointed at real restaurant data limiting
+small and if this is later pointed at real restaurant data limiting
 what's exposed to a third party API.
 
-**No API key?** `run_analysis.py` automatically falls back to a static,
+**No API key?** `run_analysis.py` automatically falls back to a static
 template based narrative so the project still runs end-to-end without
 requiring paid API access  the LLM step is an enhancement layer not
 a hard dependency.
