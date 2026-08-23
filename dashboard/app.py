@@ -330,7 +330,7 @@ with rc2:
     </div>
     """, unsafe_allow_html=True)
     st.markdown(
-        '<div class="footnote">Generated src/generate_narrative.py () '
+        '<div class="footnote">Generated 
         'from the computed metrics — see README.</div>',
         unsafe_allow_html=True,
     )
