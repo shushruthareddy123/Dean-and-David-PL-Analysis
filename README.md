@@ -68,38 +68,28 @@ Full breakdown in [`outputs/insights_report.txt`](outputs/insights_report.txt).
 
 ## Example chart
 
-![Weekly Revenue vs Operating Profit](outputs/charts/weekly_revenue_vs_profit.png)
+![Weekly Revenue vs Operating Profit](outputs/charts/weekly_revenue_vs_profit.png) 
 
 More charts (item margin ranking, profit contribution by item, labor
 cost trend, weekday demand pattern) are in `outputs/charts/`.
 
-## How to run
-
-
-
-Outputs (summary CSVs, charts, insights report) are written to `/outputs`.
 
 ## Interactive dashboard
 
-An interactive Streamlit dashboard lets you filter by date range and
+An interactive Streamlit dashboard lets it filter by date range and
 menu category and explore all metrics live (KPIs, revenue vs. profit
-trend, labor cost %, item margins, weekday demand pattern).
+trend, labor cost %, item margins weekday demand pattern).
 
 ```bash
 streamlit run dashboard/app.py
 ```
 
-This opens in your browser at `http://localhost:8501`.
+ opens in the browser at `http://localhost:8501`.
 
-**Deploy it for free (shareable link):**
-1. Push this repo to GitHub (see steps below)
-2. Go to [share.streamlit.io](https://share.streamlit.io), sign in with GitHub
-3. Click "New app", select this repo, set the main file path to `dashboard/app.py`
-4. Deploy — you get a public URL to put on your CV/LinkedIn/GitHub profile
 
 ## AI-generated executive narrative
 
-Every time you run the main pipeline, it also generates a plain-English
+Every time i run the main pipeline, it also generates a plain English
 executive summary using Claude (via the Anthropic API) — built from the
 same computed metrics, so the "so what" is written fresh each run
 instead of being a hand written static report.
@@ -112,12 +102,12 @@ python src/run_analysis.py
 This writes `outputs/ai_generated_insights.md` alongside the charts and
 CSVs and it's also what the dashboard's "Manager's note" displays.
 Only summary statistics (revenue, margins, top/bottom items, etc.) are
-sent to the API — never raw row-level sales data  keeping the prompt
+sent to the API — never raw row level sales data  keeping the prompt
 small and if this is later pointed at real restaurant data limiting
 what's exposed to a third party API.
 
 **No API key?** `run_analysis.py` automatically falls back to a static
-template based narrative so the project still runs end-to-end without
+template based narrative so the project still runs end to end without
 requiring paid API access  the LLM step is an enhancement layer not
 a hard dependency.
 
@@ -133,12 +123,12 @@ same column structure as the sample CSVs:
 | `labor.csv` | `date, total_staff_hours, blended_wage_rate_eur` |
 | `overheads.csv` | `overhead_item, monthly_cost_eur` |
 
-No other code changes are needed — `run_analysis.py` will recompute
+No other code changes  needed — `run_analysis.py` will recompute
 everything against the new data.
 
 ## Possible next steps
 
-- Break-even analysis (units/day needed to cover fixed + labor costs)
+- Break even analysis (units/day needed to cover fixed + labor costs)
 - Waste/spoilage tracking and its margin impact
 - Interactive dashboard (Power BI / Streamlit) on top of the summary tables
 - Forecasting demand by day of week / season
