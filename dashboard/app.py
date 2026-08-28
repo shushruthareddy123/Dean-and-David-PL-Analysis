@@ -278,7 +278,7 @@ avg_labor_pct_all = daily["labor_pct_of_revenue"].mean()
 # ===================================================================
 # HERO
 # ===================================================================
-st.markdown('<div class="eyebrow">Dean &amp; David — 60-day sample analysis</div>', unsafe_allow_html=True)
+st.markdown('<div class="eyebrow">Dean &amp; David — 60 day sample analysis</div>', unsafe_allow_html=True)
 st.markdown(
     '<div class="hero-title">Strong margins. Thin profit.<br>'
     '<span class="accent">Here\'s where it\'s leaking.</span></div>',
@@ -286,7 +286,7 @@ st.markdown(
 )
 st.markdown(
     '<div class="hero-sub">A full P&L pipeline built from raw sales, labor, and overhead '
-    'data — structured to mirror a real POS export from a fast-casual restaurant. '
+    'data  structured to mirror a real POS export from a fast casual restaurant. '
     'Filter below to explore any window of the 60-day period.</div>',
     unsafe_allow_html=True,
 )
