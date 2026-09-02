@@ -378,7 +378,7 @@ selected_categories = st.sidebar.multiselect("Menu category", categories, defaul
 st.sidebar.markdown("---")
 st.sidebar.markdown(
     '<div class="footnote">Data is synthetic, generated to mirror a real '
-    'POS + labor export. See README for how to point this at real data.</div>',
+    'POS + labor export.</div>',
     unsafe_allow_html=True,
 )
 
